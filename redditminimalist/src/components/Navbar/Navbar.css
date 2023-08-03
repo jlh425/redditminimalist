@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo {
+    @apply font-bold py-1 col-start-1 col-end-2 flex items-center;
+  }
+  
+  .header {
+    @apply text-branding bg-foreground shadow-box h-16 px-20;
+  }
+  
+  .logo-icon {
+    @apply col-start-2 col-end-3 mr-1 text-2xl;
+  }
+  
+  .text-header {
+    @apply text-text-header;
+  }
+  
+  .search {
+    @apply flex items-center;
+  }
+  
+  .search input {
+    @apply flex-grow bg-background-secondary border-none py-1 px-2 h-auto rounded;
+  }
+  
+  .search button {
+    @apply bg-none border-none cursor-pointer text-text-secondary text-xl;
+  }
+  

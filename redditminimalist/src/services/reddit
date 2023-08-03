@@ -1,0 +1,36 @@
+import axios from 'axios';
+
+const API_ROOT = 'https://www.reddit.com';
+const instance = axios.create({
+  baseURL: API_ROOT,
+});
+
+export const getSubredditPosts = async (subreddit) => {
+  try {
+    const response = await instance.get(`${subreddit}.json`);
+    return response.data.data.children.map((post) => post.data);
+  } catch (error) {
+    console.error('Error fetching subreddit posts:', error);
+    return [];
+  }
+};
+
+export const getSubreddits = async () => {
+  try {
+    const response = await instance.get('/subreddits.json');
+    return response.data.data.children.map((subreddit) => subreddit.data);
+  } catch (error) {
+    console.error('Error fetching subreddits:', error);
+    return [];
+  }
+};
+
+export const getPostComments = async (permalink) => {
+  try {
+    const response = await instance.get(`${permalink}.json`);
+    return response.data[1].data.children.map((comment) => comment.data);
+  } catch (error) {
+    console.error('Error fetching post comments:', error);
+    return [];
+  }
+};

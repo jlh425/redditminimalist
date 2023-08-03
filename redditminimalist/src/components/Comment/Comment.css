@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.comment {
+    @apply bg-background my-1 p-2 transition duration-100 ease-in rounded border-radius shadow hover:shadow-box;
+  }
+  
+  .comment-metadata {
+    @apply flex mb-2 items-center;
+  }
+  
+  .comment-created-time {
+    @apply ml-auto italic;
+  }
+  
+  .comment-author {
+    @apply font-bold text-branding;
+  }

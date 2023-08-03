@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.post-wrapper {
+    @apply flex;
+  }
+  
+  .post-container {
+    @apply w-full;
+  }
+  
+  .post-details {
+    @apply mt-2 border-t border-color-border pt-1 text-xs flex justify-between items-center;
+  }
+  
+  .author-username {
+    @apply text-branding font-bold;
+  }
+  
+  .post-image-container {
+    @apply w-full overflow-hidden rounded-lg;
+  }
+    .post-votes-value-loading {
+    @apply w-5 !important;
+  }  
+  .post {
+    @apply flex bg-foreground shadow-box mb-4 rounded radius p-3 transition duration-100 ease-in text-text-secondary;
+  }
+  
