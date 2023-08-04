@@ -1,15 +1,23 @@
-import React from 'react';
+import { PropTypes } from 'prop-types';
 import moment from 'moment';
 import ReactMarkdown from 'react-markdown';
 import './Comment.css';
-import Avatar from '../../services/Avatar';
 
-const Comment = (props) => {
+
+
+Comment.propTypes = {
+  comment: PropTypes.shape({
+    author: PropTypes.string.isRequired,
+    created_utc: PropTypes.number.isRequired,
+    body: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+function Comment(props) {
   const { comment } = props;
   return (
     <div className="comment">
-      <div className="comment-metadata">
-        <Avatar name={comment.author} />
+      <div className="comment-metadata">        
         <p className="comment-author">{comment.author}</p>
         <p className="comment-created-time">
           {moment.unix(comment.created_utc).fromNow()}
@@ -18,6 +26,6 @@ const Comment = (props) => {
       <ReactMarkdown source={comment.body} />
     </div>
   );
-};
+}
 
 export default Comment;

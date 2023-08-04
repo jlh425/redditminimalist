@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { HiOutlineSearch } from 'react-icons/hi';
 import './Navbar.css';
 import { FaReddit } from 'react-icons/fa';

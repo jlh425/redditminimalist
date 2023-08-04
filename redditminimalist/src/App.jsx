@@ -1,8 +1,7 @@
-import React from 'react';
 import './App.css';
 import Home from './pages/Home';
 import Navbar from './components/Navbar/Navbar';
-import Subreddits from './features/Subreddits/Subreddits';
+import Subreddits from './components/Subreddits/Subreddits';
 
 function App() {
   return (

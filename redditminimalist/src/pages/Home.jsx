@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Post from '../Post/Post';
+import Post from '../components/Post/Post';
 import PostLoading from '../components/Post/PostLoading';
-import getRandomNumber from '../../utils/getRandomNumber';
+import getRandomNumber from '../utils/getRandomNumber';
 import {
   fetchPosts,
   selectFilteredPosts,
   setSearchTerm,
-  fetchComments} from '../../store/redditSlice';
+  fetchComments} from '../store/redditSlice';
 import './Home.css';
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(fetchPosts(selectedSubreddit));
-  }, [selectedSubreddit]);
+  }, [dispatch, selectedSubreddit]);
 
   const onToggleComments = (index) => {
     const getComments = (permalink) => {

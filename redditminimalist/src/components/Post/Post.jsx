@@ -12,7 +12,7 @@ import moment from 'moment';
 import shortenNumber from '../../utils/shortenNumber';
 import Card from '../Card/Card';
 import Comment from '../Comment/Comment';
-import Avatar from '../../services/Avatar';
+
 
 const Post = (props) => {
   const [voteValue, setVoteValue] = useState(0);
@@ -123,8 +123,7 @@ const Post = (props) => {
             </div>
 
             <div className="post-details">
-              <span className="author-details">
-                <Avatar name={post.author} />
+              <span className="author-details">                
                 <span className="author-username">{post.author}</span>
               </span>
               <span>{moment.unix(post.created_utc).fromNow()}</span>

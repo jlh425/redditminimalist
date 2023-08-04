@@ -1,20 +1,20 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Card from '../../components/Card/Card';
-import { fetchSubreddits, selectSubreddits } from '../../store/subRedditSlice';
+import { getSubredditsThunk  } from '../../store/subRedditSlice';
 import './Subreddits.css';
 import {
   setSelectedSubreddit,
-  selectSelectedSubreddit,
+  selectFilteredPosts,
 } from '../../store/redditSlice';
 
 const Subreddits = () => {
   const dispatch = useDispatch();
-  const subreddits = useSelector(selectSubreddits);
-  const selectedSubreddit = useSelector(selectSelectedSubreddit);
+  const subreddits = useSelector((state) => state.subreddits.subreddits)
+  const selectedSubreddit = useSelector(selectFilteredPosts);
 
   useEffect(() => {
-    dispatch(fetchSubreddits());
+    dispatch(getSubredditsThunk());
   }, [dispatch]);
 
   return (
@@ -33,10 +33,7 @@ const Subreddits = () => {
               onClick={() => dispatch(setSelectedSubreddit(subreddit.url))}
             >
               <img
-                src={
-                  subreddit.icon_img ||
-                  `https://api.adorable.io/avatars/25/${subreddit.display_name}`
-                }
+                src={subreddit.icon_img}
                 alt={`${subreddit.display_name}`}
                 className="subreddit-icon"
                 style={{ border: `3px solid ${subreddit.primary_color}` }}
