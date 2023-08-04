@@ -1,6 +1,14 @@
 # redditminimalist
 
 npm create vite@latest redditminimalist
+        configure vite.config.js
+                export default defineConfig({
+                    plugins: [react()],
+                    server: {
+                        host: "127.0.0.1",
+                        port: 8000
+                    }
+                    })
 
 npm install firebase
 
@@ -31,3 +39,9 @@ npm install -D tailwindcss
     Start using Tailwind in your HTML
 
 npm install @reduxjs/toolkit
+
+npm install moment
+
+npm install axios
+
+npm install react-markdown
