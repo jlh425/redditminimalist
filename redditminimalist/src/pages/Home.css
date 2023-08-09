@@ -1,12 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 
 .error {
     @apply flex flex-col justify-center items-center;
   }
   
-  .error button {
+  .errorButton {
     @apply text-white bg-blue-500 border-none rounded font-medium text-base px-6 py-2 cursor-pointer;
   }

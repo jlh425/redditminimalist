@@ -18,9 +18,9 @@ const Subreddits = () => {
   }, [dispatch]);
 
   return (
-    <Card className="subreddit-card">
-      <h2>Subreddits</h2>
-      <ul className="subreddits-list">
+    <Card className="subredditCard">
+      <h2 className='subredditcardh2'>Subreddits</h2>
+      <ul className="subredditslist">
         {subreddits.map((subreddit) => (
           <li
             key={subreddit.id}
@@ -35,8 +35,7 @@ const Subreddits = () => {
               <img
                 src={subreddit.icon_img}
                 alt={`${subreddit.display_name}`}
-                className="subreddit-icon"
-                style={{ border: `3px solid ${subreddit.primary_color}` }}
+                className={`subredditIcon border-${subreddit.primary_color}`}
               />
               {subreddit.display_name}
             </button>
@@ -48,4 +47,3 @@ const Subreddits = () => {
 };
 
 export default Subreddits;
-

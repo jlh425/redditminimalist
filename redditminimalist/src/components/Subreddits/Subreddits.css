@@ -1,38 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 /* styles.css */
 
-.subreddit-card {
+.subredditCard {
     @apply pr-8;
   }
   
-  .subreddit-card h2 {
-    @apply mt-0 text-text-header;
+  .subredditcardh2 {
+    @apply mt-0;
   }
   
   .subreddit-card button {
-    @apply bg-none border-none flex items-center text-text-body font-semibold cursor-pointer w-full py-2 px-4 rounded;
+    @apply bg-none border-none flex items-center font-semibold cursor-pointer w-full py-2 px-4 rounded;
   }
   
-  .selected-subreddit button {
-    @apply text-branding !important;
+  .selectedSubredditButton {
+    
   }
   
   .selected-subreddit {
-    @apply border-l-4 border-branding bg-branding-transparent;
+    @apply border-l-4;
   }
   
-  .subreddit-card button:hover {
-    @apply bg-on-hover;
-  }
-  
-  .subreddits-list {
+   
+  .subredditslist {
     @apply list-none p-0;
   }
   
-  .subreddit-icon {
-    @apply h-6 w-6 rounded-full mr-1;
+  .subredditIcon {
+    @apply h-6 w-6 rounded-full mr-1 border-4;
   }
   

@@ -25,21 +25,22 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="logo">
-        <FaReddit className="logo-icon" />
+      <div className="navbar-logo">
+        <FaReddit className="navbar-logo-icon" />
         <p>
           Reddit<span>Minimal</span>
         </p>
       </div>
-      <form className="search" onSubmit={onSearchTermSubmit}>
+      <form className="navbar-search" onSubmit={onSearchTermSubmit}>
         <input
           type="text"
           placeholder="Search"
           value={searchTermLocal}
           onChange={onSearchTermChange}
           aria-label="Search posts"
+          className='narvbar-search-input'
         />
-        <button type="submit" onClick={onSearchTermSubmit} aria-label="Search">
+        <button className='navbar-search-button' type="submit" onClick={onSearchTermSubmit} aria-label="Search">
           <HiOutlineSearch />
         </button>
       </form>

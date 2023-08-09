@@ -1,9 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 .comment {
-    @apply bg-background my-1 p-2 transition duration-100 ease-in rounded border-radius shadow hover:shadow-box;
+    @apply  my-1 p-2 transition duration-100 ease-in rounded shadow hover:drop-shadow-lg;
   }
   
   .comment-metadata {
@@ -15,5 +17,5 @@
   }
   
   .comment-author {
-    @apply font-bold text-branding;
+    @apply font-bold;
   }

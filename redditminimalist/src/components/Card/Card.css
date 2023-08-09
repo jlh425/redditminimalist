@@ -1,11 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .card {
-    @apply bg-foreground shadow-box mb-4 rounded radius p-3 transition duration-100 ease-in text-text-secondary;
-  }
-  
-  .card:hover {
-    @apply shadow-box-hover;
+    @apply drop-shadow-sm mb-4 rounded  p-3 transition duration-100 ease-in hover:drop-shadow-xl;
   }
