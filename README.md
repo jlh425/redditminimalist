@@ -45,3 +45,7 @@ npm install moment
 npm install axios
 
 npm install react-markdown
+
+npm install eslint-plugin-node --save-dev
+
+npm install autoprefixer --save-dev
