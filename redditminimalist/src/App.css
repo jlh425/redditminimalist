@@ -6,14 +6,14 @@
 
 
 .app-navbar {
- @apply w-full h-1/5;
+ @apply w-full flex-grow;
 }
 .app-container {
   @apply flex h-4/5 w-full;
 }
 .app-main-content {
-  @apply flex-1 overflow-y-auto p-4;
+  @apply flex-grow overflow-y-auto;
 }
 .app-sidebar {
-  @apply flex-none w-28 bg-gray-200 p-4 overflow-y-auto;
+  @apply flex h-screen overflow-y-auto w-16;
 }

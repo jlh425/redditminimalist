@@ -7,15 +7,15 @@
 /* styles.css */
 
 .subredditCard {
-    @apply pr-8;
+    @apply 
   }
   
   .subredditcardh2 {
-    @apply mt-0;
+    @apply 
   }
   
   .subreddit-card button {
-    @apply bg-none border-none flex items-center font-semibold cursor-pointer w-full py-2 px-4 rounded;
+    @apply 
   }
   
   .selectedSubredditButton {
@@ -23,15 +23,15 @@
   }
   
   .selected-subreddit {
-    @apply border-l-4;
+    @apply 
   }
   
    
   .subredditslist {
-    @apply list-none p-0;
+    @apply 
   }
   
   .subredditIcon {
-    @apply h-6 w-6 rounded-full mr-1 border-4;
+    @apply
   }
   

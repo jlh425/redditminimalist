@@ -5,17 +5,17 @@
 @import "tailwindcss/utilities";
 
 .comment {
-    @apply  my-1 p-2 transition duration-100 ease-in rounded shadow hover:drop-shadow-lg;
+    @apply  ;
   }
   
   .comment-metadata {
-    @apply flex mb-2 items-center;
+    @apply ;
   }
   
   .comment-created-time {
-    @apply ml-auto italic;
+    @apply ;
   }
   
   .comment-author {
-    @apply font-bold;
+    @apply ;
   }

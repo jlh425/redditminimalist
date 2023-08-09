@@ -5,28 +5,28 @@
 @import "tailwindcss/utilities";
 
 .post-wrapper {
-    @apply flex;
+    @apply 
   }
   
   .post-container {
-    @apply w-full;
+    @apply 
   }
   
   .post-details {
-    @apply mt-2 border-t pt-1 text-xs flex justify-between items-center;
+    @apply 
   }
   
   .author-username {
-    @apply font-bold;
+    @apply 
   }
   
   .post-image-container {
-    @apply w-full overflow-hidden rounded-lg;
+    @apply 
   }
     .post-votes-value-loading {
-    @apply w-5 !important;
+    @apply 
   }  
   .post {
-    @apply flex  drop-shadow-lg mb-4 rounded p-3 transition duration-100 ease-in ;
-  }
+    @apply 
+    }
   
