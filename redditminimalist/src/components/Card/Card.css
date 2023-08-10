@@ -2,6 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.card {
-    @apply ;
+.card-card {
+    @apply mx-auto text-4xl max-w-500 sm:max-w-200 ;
   }

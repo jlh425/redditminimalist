@@ -5,28 +5,25 @@
 @import "tailwindcss/utilities";
 
 .post-wrapper {
-    @apply 
-  }
-  
-  .post-container {
-    @apply 
-  }
-  
-  .post-details {
-    @apply 
-  }
-  
-  .author-username {
-    @apply 
-  }
-  
-  .post-image-container {
-    @apply 
-  }
-    .post-votes-value-loading {
-    @apply 
+    @apply flex flex-col overflow-y-scroll;
+    height: 500px;
   }  
-  .post {
-    @apply 
-    }
+.post-container {
+  @apply flex flex-col w-full text-base;
+}
+.post-title {
+  @apply text-4xl font-bold;
+}
+.post-image-container {
+  @apply flex justify-center max-w-400;
+}
+.post-details {
+  @apply flex justify-center text-lg;
+}
+.author-username {
+  @apply italic text-sm;
+}
+.post-comments-container{
+  @apply w-full text-base
+}
   

@@ -15,8 +15,9 @@ Comment.propTypes = {
 
 function Comment(props) {
   const { comment } = props;
+
   return (
-    <div className="comment">
+    <div className="comment-comment">
       <div className="comment-metadata">        
         <p className="comment-author">{comment.author}</p>
         <p className="comment-created-time">

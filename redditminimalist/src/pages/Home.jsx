@@ -38,10 +38,10 @@ const Home = () => {
 
   if (error) {
     return (
-      <div className="error">
+      <div className="home-error">
         <h2>Failed to load posts.</h2>
         <button
-          className='errorButton'
+          className='home-errorButton'
           type="button"
           onClick={() => dispatch(fetchPosts(selectedSubreddit))}
         >
@@ -53,9 +53,9 @@ const Home = () => {
 
   if (posts.length === 0) {
     return (
-      <div className="error">
+      <div className="home-error">
         <h2>No posts matching = {searchTerm}</h2>
-        <button className='errorButton' type="button" onClick={() => dispatch(setSearchTerm(''))}>
+        <button className='home-errorButton' type="button" onClick={() => dispatch(setSearchTerm(''))}>
           Go home
         </button>
       </div>
@@ -66,6 +66,7 @@ const Home = () => {
     <>
       {posts.map((post, index) => (
         <Post
+          className="home-post"
           key={post.id}
           post={post}
           onToggleComments={() => onToggleComments(index)} // Pass the function itself

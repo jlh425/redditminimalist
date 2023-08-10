@@ -4,18 +4,18 @@
 
 @import "tailwindcss/utilities";
 
-.comment {
-    @apply  ;
+.comment-comment {
+    @apply text-4xl flex justify-center  ;
   }
   
   .comment-metadata {
-    @apply ;
+    @apply flex justify-between;
   }
   
   .comment-created-time {
-    @apply ;
+    @apply text-sm;
   }
   
   .comment-author {
-    @apply ;
+    @apply text-sm;
   }

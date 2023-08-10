@@ -8,7 +8,7 @@ const Card = (props) => {
   };
  {console.log(props.children)}
   return (
-       <div className='card'>{props.children}</div>
+       <div className='card-card'>{props.children}</div>
 )};
 
 export default Card;
