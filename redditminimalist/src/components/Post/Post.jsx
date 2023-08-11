@@ -39,7 +39,7 @@ const Post = ({post, onToggleComments}) => {
       );
     }
 
-    if (showingComments && post.comments)) {
+    if (showingComments && post.comments) {
       return (
         <div>
           {post.comments.map((comment) => (

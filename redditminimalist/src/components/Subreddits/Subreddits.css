@@ -1,10 +1,11 @@
+/*
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
 
-/* styles.css */
+
 
 .subredditCard {
     @apply 
@@ -34,4 +35,4 @@
   .subredditIcon {
     @apply
   }
-  
+  */

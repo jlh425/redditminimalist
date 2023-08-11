@@ -6,7 +6,7 @@
 
 .post-wrapper {
     @apply flex flex-col overflow-y-scroll;
-    height: 500px;
+    
   }  
 .post-container {
   @apply flex flex-col w-full text-base;
@@ -15,7 +15,7 @@
   @apply text-4xl font-bold;
 }
 .post-image-container {
-  @apply flex justify-center max-w-400;
+  @apply flex justify-center max-w-fit;
 }
 .post-details {
   @apply flex justify-center text-lg;
@@ -26,4 +26,3 @@
 .post-comments-container{
   @apply w-full text-base
 }
-  
