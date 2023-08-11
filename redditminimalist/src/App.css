@@ -17,3 +17,4 @@
 .app-sidebar {
   @apply flex h-screen overflow-y-auto w-16;
 }
+
